@@ -3,13 +3,12 @@
   "name": "News Summarizer",
   "version": "1.0",
   "description": "Summarizes news articles using AI.",
-  "permissions": ["activeTab", "tabs"],
+  "permissions": ["tabs", "activeTab", "scripting"],
   "host_permissions": ["http://localhost:8080/*", "https://*/*"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html",
     "default_title": "Summarize News"
   }
 }
